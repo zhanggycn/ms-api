@@ -6,7 +6,7 @@ formatters:
     simple:
         format: '%(levelname)s %(message)s'
     json:
-        (): sanicms.loggers.JsonFormatter
+        (): loggers.JsonFormatter
 handlers:
     console:
         level: DEBUG

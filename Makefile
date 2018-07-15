@@ -1,7 +1,7 @@
 # author: zhanggy.cn
 # makefile of ms-api_2018-06-05 in beijing
 
-proj_server := "app.py"
+proj_server := "server.py"
 proj_path := $(shell pwd)
 
 install:

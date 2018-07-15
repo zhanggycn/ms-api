@@ -5,7 +5,7 @@ import logging
 import opentracing
 
 from asyncpg import create_pool
-from api.utils import jsonify
+from utils import jsonify
 
 
 logger = logging.getLogger('sanic')

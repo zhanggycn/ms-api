@@ -8,7 +8,7 @@ import opentracing
 
 from sanic.handlers import ErrorHandler
 from opentracing.ext import tags
-from api.exception import CustomException
+from exception import CustomException
 
 logger = logging.getLogger('sanic')
 _log = logging.getLogger('zipkin')

@@ -1,21 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import logging
 import re
 import unittest
-import logging
-
 from itertools import repeat
-from multidict import CIMultiDict
-from aiohttp import hdrs, ClientResponse, StreamReader
-from sanic.views import CompositionView
-from asyncpg import create_pool
 from urllib.parse import urlparse, parse_qsl, urlencode
 
-from api.client import Client, ClientSessionConn
-from api.db import ConnectionPool
-
+from aiohttp import hdrs, ClientResponse, StreamReader
 from api.config import DB_CONFIG
+from multidict import CIMultiDict
+from sanic.views import CompositionView
+
+from api.client import Client, ClientSessionConn
+from api.configs.db import ConnectionPool
 
 logger = logging.getLogger('sanic')
 

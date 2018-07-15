@@ -1,9 +1,7 @@
 import os
+
 from sanic.config import Config
-from api.crud import crud_bp
 
-
-__all__ =['crud_bp']
 
 def load_config():
     conf  = Config()
